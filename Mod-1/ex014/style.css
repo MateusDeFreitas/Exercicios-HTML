@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(189, 186, 184);
+}
+h1 {
+    color: rgb(3, 70, 3);
+    font-size: 35px;
+}
+h2 {
+    color: rgb(2, 83, 2);
+}
+p {
+    text-align: justify;
+}

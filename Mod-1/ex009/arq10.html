@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mádias</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou diminua o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fotom.png" type="image/png">
+        <img src="imagens/fotog.png" alt="imagem flexível">
+    </picture>
+    <h1>Audios</h1>
+    <p>Reproduzindo audios no HTML5</p>
+    <audio preload="metadata" outoplays controls>
+        <source src="midia/Two Moons - Bobby Richards.mp3" type="audio/mpeg">
+        <source src="midia/Two Moons - Bobby Richards.ogg" type="audio/ogg">
+        <source src="midia/Two Moons - Bobby Richards.wav" type="audio/wav">
+        <p>infelizmente seu navegador não é compatível clique <a href="midia/Two Moons - Bobby Richards.mp3">aqui</a> para fazer o download do arquivo MP3</p>
+    </audio>
+</body>
+</html>
