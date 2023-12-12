@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exrecícios de tabelas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            position: relative;
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 100px; 
+        }
+        caption {
+            font-size: 2em;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgb(60, 57, 151);
+            color: white;
+        }
+        td, th {
+            border: 1px solid black;
+            min-width: 150px;
+            width: 200px;
+            padding: 10px;
+        }
+        .destaque {
+            background-color: rgb(180, 180, 180);
+            color: white;
+        }
+        .ADireita {
+            text-align: right;
+        }
+        #conteiner {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <table>
+            <caption>Cadastro</caption>
+            <colgroup>
+                <col id="cnome" class="destaque">
+                <col id="csexo">
+                <col id="cidade" class="ADireita">
+                <col id="cprof">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Profissão</th>
+                    <th scope="col">Agência</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria Clara</td>
+                    <td>M</td>
+                    <td>40</td>
+                    <td>Professora</td>
+                    <td>001</td>
+                </tr>
+                <tr>
+                    <td>João Pedro</td>
+                    <td>H</td>
+                    <td>21</td>
+                    <td>Banqueiro</td>
+                    <td>001</td>
+                </tr>
+                <tr>
+                    <td>Cleber Bambam</td>
+                    <td>H</td>
+                    <td>24</td>
+                    <td>Personal</td>
+                    <td>001</td>
+                </tr>
+                <tr>
+                    <td>Maria do Rosário</td>
+                    <td>M</td>
+                    <td>22</td>
+                    <td>Coveira</td>
+                    <td>001</td>
+                </tr>
+                <tr>
+                    <td>Silvio Santos</td>
+                    <td>H</td>
+                    <td>34</td>
+                    <td>Owner</td>
+                    <td>001</td>
+                </tr>
+                <tr>
+                    <td>Fatima Bernades</td>
+                    <td>M</td>
+                    <td>43</td>
+                    <td>Apresentadora</td>
+                    <td>001</td>
+                </tr>
+                <tr>
+                    <td>Mãe de Náh</td>
+                    <td>M</td>
+                    <td>67</td>
+                    <td>Vidente</td>
+                    <td>001</td>
+                </tr>
+                <tr>
+                    <td>Jeusus Cristo</td>
+                    <td>H</td>
+                    <td>88</td>
+                    <td>Supervisor</td>
+                    <td>001</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
