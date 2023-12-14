@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Kaushan+Script&family=Roboto:wght@100&display=swap');
+
+body {
+    background-color: #D8D9D7;
+     margin-bottom: 30px;
+}
+header {
+    background-color: #fafafa;
+}
+header > h1 {
+    font-family: Dancing Script;
+}
+div.principal {
+    margin: auto;
+    margin-top: 40px;
+    max-width: 800px;
+    padding: 20px; 
+    border-radius: 10px; 
+    background-color: white; 
+    box-shadow: 10px 10px 15px #b1b1b173 ;
+}
+div.cabeçalho {
+    max-width: 800px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: -20px;
+    margin-bottom: 10px;
+    padding: 10px 3px 2px 20px;
+    background-color: rgb(83, 75, 75);
+    color: white;
+    box-shadow: 10px 10px 15px #b1b1b173 ;
+    font-family: dancing script;
+}
+article {
+    padding: 10px;
+}
+h1 {
+    font-family: Dancing Script;
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1em;
+}
+p {
+    color: black;
+    text-align: justify;
+}
+li > a {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+img.fotos {
+    margin-top: -10px;
+    margin-left: -20px;
+    width: 110%;
+    max-width: 800px;
+}
+footer {
+    background-color: rgb(83, 75, 75);
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: -40px;
+    padding-top: 7px;
+}
+footer > p {
+    color: white;
+    text-align: center;
+}
+footer a {
+    color: white;
+    font-weight: 600;
+}
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}

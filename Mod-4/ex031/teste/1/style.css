@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400&family=Sriracha&display=swap');
+
+body {
+    margin: 0;
+    line-height: 50px;
+    background-color: rgb(255, 255, 255);
+    text-align: justify;
+}
+header {
+    margin-top: -10px;
+    padding: 40px 10px 10px 0px;
+    background-color: black;
+    color: white;
+    height: 160px;
+    text-align: center;
+}
+header h1{
+    margin-top: 65px;
+    font-family: passion one;
+    font-size: 6vw;
+    line-height: 0px;
+}
+header p {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pl {
+    font-size: 1.4em;
+}
+p {
+    font-size: 3vw;
+    font-family: sriracha;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+a {
+   font-weight: 600; 
+}
+a:hover {
+    text-decoration: underline;
+}
+div {
+    padding: 10px;
+    background-color: white;
+}
+div p {
+    margin-left: 20px;
+}
+article {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#fundo1 {
+    margin: -10px;
+    height: 510px;
+    max-width: 99.2%;
+    background: black url(imagens/background001.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: right center;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473)
+}
+#fundo1 article {
+    padding: 10px;
+    margin: 0;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 20px;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+#fundo1 article p {
+    margin: 0;
+}
+#fundo2 {
+    margin: -10px;
+    height: 550px;
+    max-width: 99.2%;
+    background: black url(imagens/background002.jpg) no-repeat fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473)
+}
+#fundo2 article {
+    padding: 10px;
+    margin: 0;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 20px;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+#fundo2 article p {
+    margin: 0;
+}
+footer {
+    background-color: black;
+    color: white;
+    margin: 0; 
+    margin-top: 40px;
+    padding: 5px;
+}
+footer p {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
