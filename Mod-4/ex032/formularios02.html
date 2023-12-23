@@ -30,25 +30,17 @@
         <form action="cadastro.php" method="post" autocomplete="off">
             <p>
                 <label for="iusu">Usuário:</label>
-                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="40" size="10" placeholder="Nome do Usuário">
+                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="40" size="15" placeholder="Nome do Usuário" autocomplete="username">
             </p>
             <p>
                 <label for="isenha">Senha:</label>
-                <input type="password" name="senha" id="isenha" required minlength="8" max="25" size="10" placeholder="mín: 8 letras">
+                <input type="password" name="senha" id="isenha" required minlength="8" max="25" size="10" placeholder="mín: 8 letras" autocomplete="current-password">
             </p>
             <p>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
             </p>
+        </form>
     </div>
-    </form>
-
-
-
-
-
-
-
-
 </body>
 </html>

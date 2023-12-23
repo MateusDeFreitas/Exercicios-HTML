@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        div {
+            background-color: lightgray;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 3px 5px 3px rgba(117, 117, 117, 0.733);
+            margin: auto;
+            margin-top: 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Teste de formulários</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="iname">Nome:</label>
+                <input type="text" name="nome" id="iname" required placeholder="Nome do usuário" autocomplete="name" maxlength="20" min="3">
+            </p>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" step="0.1" required placeholder="0 a 10" value="5">
+            </p>
+            <p>
+                <label for="imes">Período letivo</label>
+                <input type="month" name="mes" id="imes" value="2023-12">
+            </p>
+            <p>
+                <label for="idia">Data:</label>
+                <input type="date" name="dia" id="idia" >
+            </p>
+            <p>
+                <label for="ihora">Hora:</label>
+                <input type="time" name="Hora" id="hora">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>  
+    </div>
+</body>
+</html>
