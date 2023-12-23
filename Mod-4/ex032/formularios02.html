@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        div {
+            background-color: lightgray;
+            max-width: 600px;
+            max-height: 40vh;
+            border-radius: 15px;
+            box-shadow: 3px 5px 3px rgba(117, 117, 117, 0.733);
+            margin: auto;
+            margin-top: 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Teste de formulários</h1>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <p>
+                <label for="iusu">Usuário:</label>
+                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="40" size="10" placeholder="Nome do Usuário">
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required minlength="8" max="25" size="10" placeholder="mín: 8 letras">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+    </div>
+    </form>
+
+
+
+
+
+
+
+
+</body>
+</html>
