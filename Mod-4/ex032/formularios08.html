@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        div {
+            background-color: lightgray;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 3px 5px 3px rgba(117, 117, 117, 0.733);
+            margin: auto;
+            margin-top: 50px;
+            padding: 10px;
+        }
+        fieldset {
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+        h2 {
+            margin: 0;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Teste de formulários</h1>
+        <fieldset>
+            <legend>Dados</legend>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <fieldset>
+                    <legend>Soma</legend>
+                    <p>
+                        <label for="in1">Numero 1:</label>
+                        <input type="number" name="n1" id="in1" max="50" min="0" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                    </p>
+                    <p>
+                        <label for="in2">Numero 2:</label>
+                        <input type="number" name="n2" id="in2" max="50" min="0" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                    </p>
+                    <p>
+                        <label for="isoma">Soma:</label>
+                        <output name="soma" id="isoma">0</output>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Referência</legend>
+                    <p>
+                        <label for="inu">Número</label>
+                        <input type="range" name="n" id="inu" value="5" oninput="iv.innerHTML = Number(inu.value)">
+                        <output name="v" id="iv">5</output>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Idade</legend>
+                    <p>
+                        <label for="iano">Em que ano você nasceu? </label>
+                        <input type="number" name="ano" id="iano" min="1950" max="2023" oninput="calidade()">
+                    </p>
+                    <p>
+                        <label for="iidade">Sua idade é: </label>
+                        <output id="iidade">0</output>
+                    </p>
+                </fieldset>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </fieldset>
+    </div>
+    <script>
+        function calidade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
