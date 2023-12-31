@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* estilo para impressão */
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+body {
+    margin: auto;
+    max-width: 90wh;
+}
+html {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+menu {
+    display: none;
+}
+article::after {
+    content: "Esse artigo foi escrito pelo Reporter Mateus Freitas. No dia 30/12/2023";
+}
