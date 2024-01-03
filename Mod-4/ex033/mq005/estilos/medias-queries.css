@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* 
+    (2023)
+
+    Mobile devices – 320px — 480px. 
+
+    celulares – 481px — 768px.
+
+    iPads, Tablets – 769px — 992px. 
+
+    Desktops, Computadores, large screens – 992px — 1200px.
+
+    Extra large screens, TV – 1201px, and more.
+*/
+
+@media  screen and (min-width: 769px) {
+    #burger {
+        display: none
+    }
+    nav {   
+        display: block;
+    }
+    nav li {
+        width: 70px;
+        display: inline-block;
+        margin: 0;
+    }
+    
+}
+
+@media print {
+    * {
+        background-color: white;
+    }
+    header h1 {
+        color: black;
+    }
+    #burger {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    nav li {
+        display: none;
+    }
+}
