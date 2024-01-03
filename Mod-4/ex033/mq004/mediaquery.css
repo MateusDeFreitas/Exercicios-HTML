@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* Estilos para as demais mídias */
+
+/* 
+    (2023)
+
+    Mobile devices – 320px — 480px. - celulares
+
+    iPads, Tablets – 481px — 768px. - tablets
+
+    Small screens, laptops – 769px — 1024px.    
+    Desktops, large screens – 1025px — 1200px. - Computadores
+
+    Extra large screens, TV – 1201px, and more. - Televisões
+*/
+
+@media print {
+    body {
+        background: url(imagens/back-print.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    main {
+        border: 2px solid black;
+    }
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        text-shadow: none;
+    }
+    #cel{display: none;}
+    #tab {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+    #imp {display: block;}
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    body {
+        background: url(imagens/back-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    #cel{display: none;}
+    #tab {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+    #imp {display: none;}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    body {
+        background: url(imagens/back-pc.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    #cel{display: none;}
+    #tab {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+    #imp {display: none;}
+}
+
+@media screen and (min-width: 1201px) {
+    body {
+        background: url(imagens/back-tv.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    main {
+        width: 700px;
+    }
+    #cel{display: none;}
+    #tab {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+    #imp {display: none;}
+}

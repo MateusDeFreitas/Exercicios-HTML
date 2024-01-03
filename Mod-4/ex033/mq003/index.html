@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <style>
+
+        /*Configurações gerais*/
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        body {
+            background-color: #233eff;
+            width: 100vw;
+            height: 100vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        h1 {
+            text-align: center;
+            padding: 10px;
+            color: white;
+            text-shadow: 2px 2px 0px rgb(0, 0, 138);
+        } 
+
+        /*Aparelho em pé (portrait)*/
+
+        @media screen and (orientation: portrait) {
+            body {
+                background-image: url(../imagens/cev-portrait.jpg);
+                background-position: center bottom;
+            } 
+        }
+
+        /*Aparelho deitado (landscape)*/
+
+        @media screen and (orientation: landscape) {
+            body {
+                background-image: url(../imagens/cev-landscape.jpg);
+                background-position: left bottom;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+</body>
+</html>
